@@ -48,7 +48,7 @@ const initialEvents = [
 
 let nextId = 18
 
-function eventsReducer(events = initialEvents, action) {
+export function eventsReducer(events = initialEvents, action) {
   switch(action.type) {
     case ADD_EVENT:
       return [
